@@ -1,0 +1,1387 @@
+# ===========================================================================
+# Lavi Bot Language Configuration
+# If you find any issues, need support, or have a suggestion for the bot, please join our support server and create a ticket, 
+# http://discord.lavidevelopment.net
+# ===========================================================================
+
+# ===========================================================================
+# BASIC MESSAGES
+# ===========================================================================
+NoPermsMessage: "Bu komutu kullanma izniniz yok."
+SuccessEmbedTitle: "Başarılı"
+ErrorEmbedTitle: "Bir hata oluştu"
+
+# ===========================================================================
+# BASIC MESSAGES
+# ===========================================================================
+HelpCommand:
+  Title: "## **{botName} Komutlar Listesi**"
+  ThumbnailURL: "https://i.imgur.com/iaQjt2f.png"
+  FooterText: "{botName}"
+  FooterIconURL: "https://i.imgur.com/iaQjt2f.png"
+  Categories:
+    Fun: "🎮 Eğlence"
+    General: "📜 Genel"
+    Moderation: "🔨 Moderasyon"
+    Utility: "⚙️ Araçlar"
+    Economy: "💰 Ekonomi"
+  Colors:
+    Embed: "#000000"
+
+# ===========================================================================
+# CRYPTO MESSAGES
+# ===========================================================================
+Crypto:
+  Embed:
+    Title: "Kripto Ödeme | {coinType}" # Ayrıca {coinType_Full}, tam coin adını gösterir, BTC'yi Bitcoin olarak gösterir
+    Description:
+      - "> Ödemeyi yapmak için QR kodunu tarayın,"
+      - "> veya aşağıdaki adresi kullanın."
+      - " "
+      - "* **Satış Bilgileri**" 
+      - "> **Satıcı:** {seller}" 
+      - "> **Müşteri:** {client}" # Slash komutunda tanımlanan kullanıcı 
+      - "> **Hizmet:** {service}" 
+      - " "
+      - "* **Cüzdan Bilgileri**" 
+      - "> **Cüzdan:** `{walletAddress}`" 
+      - "> **Miktar:** {cryptoAmount} ({currencySymbol}{currencyAmount})" # {currencySymbol} = $, £, vb.
+    Footer:
+      Text: "CoderTim Development | Kripto Ödemeler"
+      Icon: "https://i.imgur.com/w5XxKpc.png"
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#ADD8E6"
+    Image: ""
+    Thumbnail: "{coinIcon}" # {qrCode} veya {coinIcon}
+    Buttons:
+      - Name: "Cüzdan Adresini Al"
+        Emoji: "📥"
+        Style: "Primary" # Primary, Secondary, Success, Danger, Link
+        Type: "PASTE"    # PASTE, LINK, QR
+        Link: ""         # Sadece LINK türü kullanılıyorsa
+      - Name: "Kullanım Şartları"
+        Emoji: "📥"
+        Style: "Link" # Primary, Secondary, Success, Danger, Link
+        Type: "LINK"     # PASTE, LINK, QR
+        Link: "https://google.com" # Sadece LINK türü kullanılıyorsa
+      - Name: "QR Kodu"
+        Emoji: "📥"
+        Style: "Primary" # Primary, Secondary, Success, Danger, Link
+        Type: "QR"     # PASTE, LINK, QR
+        Link: "" # Sadece LINK türü kullanılıyorsa
+
+Wallets:
+  BTC: "Örnek" # Cüzdan Adresi
+  LTC: "Örnek" # Cüzdan Adresi
+  ETH: "Örnek" # Cüzdan Adresi
+
+# ===========================================================================
+# BACKUP COMMAND MESSAGES
+# ===========================================================================
+BackupCreating: "✅ | Yedek oluşturuluyor, lütfen bekleyin..."
+BackupCreatedEmbed: "Sunucunun başarıyla **yedeklendi**!"
+BackupCreatedMsg: "✅ | Sunucunun başarıyla yedeği oluşturuldu, yedek bilgileri DM'inize gönderildi!"
+BackupWrongUsage: "Lütfen geçerli bir yedek ID'si belirtin!"
+BackupDeleted: "Yedek başarıyla silindi!"
+BackupNotFound: "Bu ID ile hiçbir yedek bulunamadı!"
+BackupLoadWarning: "⚠️ Sunucu kanalları, roller ve ayarlar silinecek. Yedeği yüklemek istediğinize emin misiniz?"
+BackupLoading: "⚠️ Yedek yükleniyor..."
+BackupLoaded: "Yedek başarıyla yüklendi!"
+BackupCancelled: "İptal edildi!"
+BackupEmbedUsage: "Kullanım"
+BackupCreatedBy: "Oluşturan:"
+BackupButtonConfirm: "Onayla"
+BackupButtonCancel: "İptal Et"
+
+# ===========================================================================
+# AVATAR + BANNER COMMAND MESSAGES
+# ===========================================================================
+AvatarSearchedBy: "Arayan:"
+AvatarClickHere: "Resmi görmek için buraya tıklayın"
+
+BannerClickHere: "Tam banner'ı görmek için buraya tıklayın"
+BannerSearchedBy: "Banner arayan"
+NoBannerSet: "Bu kullanıcının bir banner'ı yok."
+
+# ===========================================================================
+# COINFLIP COMMAND MESSAGES
+# ===========================================================================
+CoinflipMsg: "{user-tag} bir madeni para çevirdi!" # Kullanılabilir değişkenler: {user-tag}
+CoinflipDone: "Sonuç **{result}** oldu!" # Kullanılabilir değişkenler: {result}
+
+# ===========================================================================
+# MEME COMMAND MESSAGES
+# ===========================================================================
+MemeViewThread: "İpliği Görüntüle"
+
+# ===========================================================================
+# COMPLIMENT COMMAND MESSAGES
+# ===========================================================================
+compliments:
+  messages:
+    - "Farkında olduğundan daha fazla yardımcı oluyorsun."
+    - "Nazik olma yeteneğin eşsiz."
+    - "Harika bir mizah anlayışın var."
+    - "Başka insanlarda en iyiyi ortaya çıkarıyorsun."
+    - "Bakış açın ferahlatıcı."
+    - "Odayı aydınlatıyorsun."
+    - "Harika bir tarzın var."
+    - "Nazikliğin karşılaştığı herkes için bir şifa."
+    - "Karanlık bir günde güneş ışınısın."
+    - "Akıllı bir kurabiyesin."
+    - "Çapraz bulmacayı mürekkeple yapıyorsun, tahminimce."
+    - "Birinin gülümseme sebebisin."
+    - "En iyi fikirleri sen buluyorsun."
+    - "Her zaman o gümüş astarı bulmayı biliyorsun."
+    - "Herkes bazen düşer; sadece senin gibi insanlar tekrar kalkıp devam eder."
+    - "Karanlıkta bir mum gibisin."
+    - "Başka insanlara örnek oluyorsun."
+    - "Yanında olmak, mutlu bir tatil gibi."
+    - "Her zaman ne söyleyeceğini biliyorsun."
+    - "Yeni şeyler öğreniyorsun ve kendini geliştirmeye çalışıyorsun, bu harika."
+    - "Yaratıcılığın bulaşıcı."
+    - "Doğal bir zarafet ve şıklığın var."
+    - "Nazikliğin seni tanıyan herkes için bir hazinedir."
+    - "İnanılmaz bir iş ahlakına sahipsin."
+    - "Pozitifliğin ilham verici."
+    - "Her şeyi daha iyi hale getirme şeklin var."
+    - "İnanılmaz derecede cesur ve güçlü birisin."
+    - "Gerçek bir problem çözücüsün, her zaman bir yol buluyorsun."
+    - "Gülüşün bulaşıcı."
+    - "Girdiğin her odayı aydınlatıyorsun."
+    - "Enerjin bulaşıcı."
+    - "Gününü aydınlatan harika bir mizah anlayışın var."
+    - "Her çeşit harikasın."
+    - "Gerçekten harika bir kalbin var."
+    - "Sevdiğin şeylere olan tutkun takdire şayan."
+    - "Dünyada bir fark yaratıyorsun."
+    - "Baloncuk kaplı bir top kadar eğlencelisin."
+    - "1'den 10'a kadar bir ölçekte, 11'sin."
+    - "Taze bir hava gibi."
+    - "Birinin gülümseme sebebisin."
+    - "Gerçek olduğun için bir unicorn'dan bile daha iyisin."
+    - "Nasıl bu kadar komik olmayı ve herkesi güldürmeyi başarıyorsun?"
+    - "Gerçekten iyi bir [müzik/kitap/film] zevkine sahipsin."
+    - "Rastgele bilgileri tam zamanında hatırlama yeteneğin etkileyici."
+    - "Yeni şeyler öğreniyorsun ve kendini geliştirmeye çalışıyorsun, bu harika."
+    - "Bir zombi kıyameti geçirebilirsin."
+    - "Şeker dolu bir top kadar eğlencelisin."
+    - "En mükemmel sen sensin."
+    - "Nazikliğin karşılaştığı herkes için bir şifa."
+
+# ===========================================================================
+# DARK JOKE COMMAND MESSAGES
+# ===========================================================================
+darkjokes:
+  messages:
+    - "Bir adama kibrit ver, birkaç saat sıcak kalır. Bir adamı ateşe ver, ömrü boyunca sıcak kalır."
+    - "Eşim ve ben çocuk istememe kararı aldık. Eğer isteyen biri varsa, lütfen iletişim bilgilerinizi gönderin, yarın bırakırız."
+    - "Kolsuz bir çocuğa Noel'de ne verirsiniz?\nHiçbir şey, açamaz ki."
+    - "Eski kız arkadaşımın tekerlekli sandalyesini aldım.\nKim geri süründü mü?"
+    - "Bir şaka ne zaman baba şakası olur?\nGittiğinde ve bir daha geri gelmediğinde."
+    - "Yetimlerin aile restoranında yemek yemelerine izin verilir mi?"
+    - "Bir adam bir kütüphaneye girdi ve intihar etmenin kitabını istedi. Kütüphaneci: “Defol git, geri getirmeyeceksin.” dedi."
+    - "Alzheimer hastası büyannemiz bize bir şaka anlatırdı.\n“Kapı çaldı” derdi, biz de “Kim o?” derdik.\nSonra “Hatırlayamıyorum” der ve ağlamaya başlardı."
+    - "Yetimler neden beyzbol oynayamaz?\nEvin neresi olduğunu bilmiyorlar."
+    - "Suzy mayın tarlasına kaybolduktan sonra nereye gitti?\nHER YERE!"
+    - "Eski kız arkadaşımın katilini iki yıldır arıyorum. Ama kimse yapmak istemedi."
+    - "Stephen Hawking’in son sözleri neydi?\nWindows XP oturum kapatma sesi."
+    - "Bir hız kestiricisine çarptığınızda ve okul bölgesinde hız kestiricisi olmadığını hatırladığınızda."
+    - "İki çocuk bir çocuğu bir sokakta dövüyordu, ben de yardım etmeye karar verdim. Üçümüz onun şansı kalmadı."
+    - "Eski kız arkadaşım kötü bir kazaya karıştı. Doktorlara yanlış kan grubunu söyledim. Şimdi gerçek reddi ne demek olduğunu anlayacak."
+    - "Jim telefonunda oynarken, dedem ona, “Çok fazla teknoloji kullanıyorsun!” dedi. Jim de, “Hayır, SEN çok fazla teknoloji kullanıyorsun!” dedi ve dedemin yaşam destek sistemini kapattı."
+    - "Dedemin son sözlerini her zaman hatırlayacağım: Merdiveni sallamayı bırak!"
+    - "Afrika yemeği denemek ister misin?\nOnlar da isterdi."
+    - "Arka koltuktaki çocuklar kazalara ve kazalar arka koltukta çocuklara neden olur."
+    - "Bir hastanede bir dergiyi bitirdiğinizde ne yaparsınız? Yeniden yükleyin ve devam edin."
+    - "Bir hastanede sürpriz parti nasıl yaparsınız?\nEpilepsi bölümüne bir stroboskop ışığı getirin."
+    - "Breakdance yapabilen bir balığım var! Sadece 20 saniye, bir kez."
+    - "Bir sineğin 70 mil hızla gidiyor olan bir camla çarpışırken kafasında son giden şey nedir?\nKarnı."
+    - "Babam, kan grubumuzu hatırlayamadığında öldü. Ölürken “pozitif olun” diyordu, ama onsuz zor."
+    - "Paraşütle atlamanın iki kez yapılması gerektiğini biliyorsunuz."
+    - "Astronomiyle ilgilenen kız arkadaşım yıldızların nasıl öldüğünü sordu. “Genellikle bir doz aşımı,” dedim."
+    - "Yaşlı akrabalarım düğünlerde beni, “Sıradaki sen olacaksın!” diye şakalar yaparak eğlendirirdi. Ama ben de onları cenazelerde aynı şekilde yapmaya başlayınca durdular."
+    - "Eşim ve ben çocuk istememe kararı aldık.\nEğer isteyen varsa, lütfen iletişim bilgilerinizi gönderin, yarın bırakırız."
+    - "Sakin bir şekilde uyuyarak ölmek istiyorum, tıpkı dedem gibi,\nArabasındaki yolcuların çığlığı gibi değil."
+    - "Babam soğan doğururken ağlamaya başladım. Soğan çok iyi bir köpekti."
+    - "İlk başta başarılı olamazsanız... o zaman paraşütle atlamak kesinlikle sizin işiniz değil."
+    - "Her arkadaş grubunda cinayet işleyebilecek bir kişi olduğunu söylerler.\nDave’in olabileceğini düşündüm, bu yüzden zarara neden olmasından önce onu öldürdüm."
+    - "Dedemin bana ölmeden önce söylediği son sözlerini hiç unutmayacağım. “Hala merdiveni tutuyor musun?”"
+    - "Sarı ve yüzemez ne? Bir otobüs dolusu çocuk."
+    - "Doktor bana bir yıl ömür biçti, bu yüzden onu vurdum. Hakim 15 yıl verdi. Sorun çözüldü."
+    - "Çocukken karanlıktan korkardık.\nAma büyüdüğümüzde, elektrik faturası bizi ışık korkusuna dönüştürdü!"
+    - "Hasta: Ah doktor, çok gerginim. Bu ilk operasyonum.\nDoktor: Endişelenmeyin. Benimki de öyle."
+    - "Cenazelerin hep sabah 9'da olması sinirimi bozuyor. Gerçekten bir yas kişi değilim."
+    - "Arkadaşlar neden karla çok benzer? Üzerine işediğinizde kaybolurlar."
+    - "Terapistim intikam takıntım olduğunu söyledi. Buna göre göreceğiz."
+    - "İyi bir kelime dağarcığına sahip olmak önemlidir. 'Antidote' ve 'anecdote' arasındaki farkı bilseydim, iyi bir arkadaşım hala hayatta olacaktı."
+    - "Söylerler ki ne yersen osun. Koca bir hayal kırıklığı yediğimi hatırlamıyorum."
+    - "Neden bir psikiyatristin tuvaleti kullandığını duyamazsınız? Çünkü 'P' sessizdir."
+    - "Trickle-down ekonomisi hakkında bir şakam var. Ama %99'unuz bunu asla anlamayacak."
+    - "Büyük bir yeni çalışma, insanların maymunlardan daha fazla muz yediğini buldu. En son ne zaman bir maymun yediğimi hatırlamıyorum."
+    - "Eşime hatalarını kucaklamasını söyledim. Bana sarıldı."
+    - "Eşim buzdolabının üstüne, 'Bu çalışmıyor, hoşça kal' yazılı bir not bıraktı. Açtım, gayet iyi çalışıyor."
+    - "Bir grup fotoğrafı çekildiğinde kamerayı size verdiklerinde hoşlanmadığınızı bilirsiniz."
+    - "Mezarlar neden hiç kalabalık olmaz? Çünkü insanlar girmek için ölüyor."
+    - "Bir EpiPen'im var. Arkadaşım ölürken bana verdi. Onun bana sahip olmasını çok önemsedi gibi görünüyor."
+    - "Bugün korkunç bir gündü. Eski kız arkadaşım bir otobüsle çarpıldı ve ben otobüs şoförü olarak işimi kaybettim."
+    - "Bugün koşmayı planlamıyordum, ama o polisler aniden ortaya çıktı."
+    - "Paramediklere eski kız arkadaşım için yanlış kan grubunu söyledim, böylece ne olduğunu biliyor."
+    - "Yas danışmanım geçenlerde öldü. İşini o kadar iyi yapıyordu ki, umrumda bile değil."
+    - "Autocorrect'in mucidi bugün öldü. Eğlence parkı merhaba olacak."
+    - "Babamın trafik polisi olarak işinden çaldığını reddetmiştim, ama eve geldiğimde tüm işaretler oradaydı."
+    - "Bir adama kibrit ver, birkaç saat sıcak kalır. Onu ateşe ver, ömür boyu sıcak kalır."
+
+# ===========================================================================
+# FACT COMMAND MESSAGES
+# ===========================================================================
+ 
+# ===========================================================================
+# GAMES COMMAND MESSAGES
+# ===========================================================================
+Roll: "🎲 ${rollResult} sayısını attınız!"
+
+CoinFlip:
+  Heads: "Yazı"
+  Tails: "Tura"
+
+wordSnake:
+  start: "Kelime Yılanı oyunu başladı! İlk kelime: `${word}`. Bir sonraki kelime `${letter}` harfi ile başlamalı."
+  invalidWord: "Geçersiz kelime! Unutmayın, kelime `${letter}` harfi ile başlamalı."
+  timeUp: "Süre doldu! Son kelime `${lastWord}`. Oyun bitti ve son skorunuz: `${score}`."
+  gameOver: "Oyun bitti! Son skor: `${score}`."
+
+Hangman:
+  commandDescription: "Adam Asmaca oyna!"
+  activeGameWarning: "Zaten aktif bir oyununuz var. Yeni bir oyun başlatmadan önce mevcut oyunu bitirin."
+  gameStartMessage: "Adam Asmaca oyunu başlıyor... Tahminlerinizi yazın!"
+  winMessage: "Tebrikler, {username}! Kazandınız!"
+  gameOverMessage: "Oyun Bitti! Kelime şuydu: {word}"
+  continueMessage: "Tahmin etmeye devam edin!"
+  words:
+    - Okyanus
+    - Korsan
+    - Kale
+    - Gökkuşağı
+    - Orman
+    - Ejderha
+    - Müzik
+    - Kurabiye
+    - Balkabağı
+    - Fener
+    - Gölge
+    - Kuyruklu yıldız
+    - Mum
+    - Gitar
+    - Bulmaca
+    - Yunus
+    - Roket
+    - Büyücü
+    - Şövalye
+    - Sirk
+    - Discord
+    - Lavi
+    - Macera
+    - Balon
+    - Bisiklet
+    - Kelebek
+    - Kamp ateşi
+    - Çikolata
+    - Dinozor
+    - Fil
+    - Havai fişek
+    - Galaksi
+    - Değerli taş
+    - Helikopter
+    - İglo
+    - Denizanası
+    - Kaleydoskop
+    - Deniz feneri
+    - Meteor
+    - Kolye
+    - Ahtapot
+    - Resim
+    - Bataklık
+    - Robot
+    - Uzay gemisi
+    - Hazine
+    - Tekboynuz
+    - Yanardağ
+    - Şelale
+    - Ksilofon
+    - Yeti
+    - Zebra
+    - Çiçek
+    - Kanyon
+    - Çöl
+    - Enigma
+    - Peri
+    - Bahçe
+    - Ufuk
+    - Ada
+    - Jonglör
+    - Uçurtma
+    - Labirent
+    - Çayır
+    - Bulutsu
+    - Vaha
+    - Saray
+    - Kuasar
+    - Resif
+    - Yıldız gemisi
+    - Tapınak
+    - Evren
+    - Girdap
+    - Düdük
+    - Ksenon
+    - Bahçe
+    - Hava gemisi
+    - Elma
+    - Muz
+    - Kiraz
+    - Hurma
+    - İncir
+    - Üzüm
+    - Kavun
+    - Jackfruit
+    - Kivi
+    - Limon
+    - Mango
+    - Nektarin
+    - Portakal
+    - Papaya
+  embeds:
+    gameTitle: "🔤 Adam Asmaca Oyunu: {username}"
+    wordToGuess: "Tahmin Edilecek Kelime"
+    guessesLeft: "Kalan Tahminler"
+    progress: "İlerleme"
+    useChatToGuess: "Bir harf tahmin etmek için sohbeti kullanın.\nHer mesajda yalnızca bir harf yazın."
+    guessFooter: "Tahmininizi sohbete yazın. Yanlış tahminler kalan tahminlerinizi azaltır!"
+    gameOverTitle: "Oyun Bitti"
+    finalWord: "Son Kelime:"
+    gameEndMessage: "Oyun sona erdi."
+    thanksForPlaying: "Oynadığınız için teşekkürler!"
+
+Wordle: # 5 harfli kelimeler (Wordle)
+  Messages:
+    Title: "Wordle"
+    BottomFirst: "5 harfli kelimeyi tahmin et"
+    BottomLast: "Tahmin etmek için sohbeti kullan!"
+    KeepGuess: "Tahmin etmeye devam et!"
+    GameActive: "Zaten aktif bir oyununuz var!"
+    LetsPlay: "Haydi Wordle oynayalım! 5 harfli kelimeyi tahmin etmeye çalış."
+  Embed:
+    Title: "**Oyun Bitti**"
+    Description: "Oyun bitti! Kelime şuydu: {word}"
+    Footer: "Oynadığınız için teşekkürler!"
+  words:
+    - Elma
+    - Ekmek
+    - Sandık
+    - İçecek
+    - Kartal
+    - Don
+    - Üzüm
+    - Ev
+    - İdeal
+    - Meyve suyu
+    - Bıçak
+    - Limon
+    - Mango
+    - Gece
+    - Zeytin
+    - Şeftali
+    - Sessiz
+    - Nehir
+    - Taş
+    - Masa
+    - Birlik
+    - Canlı
+    - Balina
+    - Xylog
+    - Zebra
+
+Connectfour:
+  Title: "Sıra {user}'da!"
+  Colors:
+    Win: "#7ff946"
+    Lose: "#df3e3e"
+    Tie: "#ffffff"
+  Embed:
+    Title: "**Oyun Bitti**"
+    Description: "{user} kazandı!"
+    Footer: "Oynadığınız için teşekkürler!"
+  Board:
+    Emojis:
+      Player: "🔴"
+      Bot: "🟡"
+      Blank: "⬛"
+      1: "1️⃣"
+      2: "2️⃣"
+      3: "3️⃣"
+      4: "4️⃣"
+      5: "5️⃣"
+      6: "6️⃣"
+      7: "7️⃣"
+  Buttons:
+    Style: "Secondary"
+    Numbers:
+      1:
+        Text: ""
+        Emoji: "1️⃣"
+      2:
+        Text: ""
+        Emoji: "2️⃣"
+      3:
+        Text: ""
+        Emoji: "3️⃣"
+      4:
+        Text: ""
+        Emoji: "4️⃣"
+      5:
+        Text: ""
+        Emoji: "5️⃣"
+      6:
+        Text: ""
+        Emoji: "6️⃣"
+      7:
+        Text: ""
+        Emoji: "7️⃣"
+
+TicTacToe:
+  Board:
+    Emojis:
+      X: "❌"
+      O: "⭕"
+      Blank: "⬛"
+  Colors:
+    Win: '#00FF00'
+    Lose: '#FF0000'
+    Tie: '#FFFF00'
+  Messages:
+    OwnGame: "Kendi oyununu başlat!"
+    ColumnFull: "Bu sütun dolu, başka bir tane dene"
+    Win: "## **Aferin {user}! Kazandın!**"
+    Tie: "## **Berabere {user}!**"
+    Lost: "## **Üzgünüm {user}, kaybettin!**"
+    Columns: "Sütun numaraları. Hamle yapmak için aşağıdaki düğmeleri kullanın."
+    GameOver: "Oyun Bitti"
+    ThanksForPlaying: "Oynadığınız için teşekkürler!"
+
+RockPaperScissors:
+  Messages:
+    RockPaperScissors: "**TaşKağıtMakas**"
+    YourChoice: "## **{userChoice}** seçtiniz, ve bot **{botChoice}** seçti."
+    Win: "## **Aferin {user}! Kazandın!**"
+    Tie: "## **Berabere {user}!**"
+    Lost: "## **Üzgünüm {user}, kaybettin!**"
+    GameEnded: "Oyun sona erdi!"
+    ThanksForPlaying: "Oynadığınız için teşekkürler!"
+    CantPlaySomeoneElsesGame: "Başkasının oyununu oynayamazsınız!"
+  Embed:
+    Color: "#000000"
+    Title: "👊 Taş Kağıt Makas"
+    Description: "**Oynayalım! Aşağıdan silahınızı seçin:**"
+    Fields:
+      Rock:
+        Name: "Taş"
+        Value: "🪨"
+      Paper:
+        Name: "Kağıt"
+        Value: "📰"
+      Scissors:
+        Name: "Makas"
+        Value: "✂️"
+    Footer:
+      Text: "Seçiminizi yapın!"
+    Buttons:
+      Rock:
+        Style: "Secondary"
+        Text: "Taş"
+        Emoji: "🪨"
+      Paper:
+        Style: "Secondary"
+        Text: "Kağıt"
+        Emoji: "📰"
+      Scissors:
+        Style: "Secondary"
+        Text: "Makas"
+        Emoji: "✂"
+
+# ===========================================================================
+# SNIPE COMMAND MESSAGES
+# ===========================================================================
+SnipeNoMsg: "Bu kanalda snipe yapılacak bir mesaj yok."
+ErrorGeneric: "Üzgünüz, komutta bir hata oluştu."
+
+# ===========================================================================
+# GIVEAWAY COMMAND MESSAGES
+# ===========================================================================
+ 
+Giveaways: # Yer tutucular: {prize} {serverName} {hostedBy} {whitelistRoles} {blacklistRoles} {channel} {winnerCount}
+ EntrySuccessMessage: "🎉 {hostedBy} tarafından düzenlenen çekilişe başarıyla katıldınız!"
+ LeaveSuccessMessage: "👋 Çekilişten başarıyla çıktınız."
+ EntryErrorMessage: "Çekilişe katılmaya çalışırken bir hata oluştu. Lütfen CoderTim Development ile iletişime geçin."
+ CheckChance: "{user}, bu çekilişi kazanma şansınız % {percent}. ({entries} giriş)"
+ GiveawayNotFound: "Çekiliş bulunamadı veya silinmiş olabilir...."
+ GiveawayAlreadyEnded: "Çekiliş zaten sona erdi."
+ GiveawayHasntEnded: "Çekiliş henüz sona ermedi."
+ WinMessage: "**{prize}** çekilişinin kazananlarını tebrik ederiz! {winners}" # {winners} yer tutucu
+ WinRerollMessage: "Çekiliş yeniden çekildi! **{prize}** çekilişinin yeni kazananlarını tebrik ederiz! {winners}" # {winners} yer tutucu
+ WinnerDirectMessage: "Tebrikler, **{prize}** çekilişini kazandınız! Lütfen **{serverName}** sunucusunda bir destek talebi açın. {channel}"
+ NoParticipationMessage: "Kazanan yok, kimse {prize} çekilişine katılmadı."
+ IncorrectRoleMessage: "{prize} çekilişine katılmak için gerekli role(s) sahip değilsiniz!"
+ IncorrectMinimumAccountAgeMessage: "Hesabınız {prize} çekilişine katılmak için yeterince eski değil!"
+ IncorrectMinimumServerJoinDateMessage: "{serverName} Discord sunucusunda yeterince uzun süredir bulunmuyorsunuz, bu yüzden {prize} çekilişine katılamazsınız!"
+ AlreadyEnteredMessage: "{prize} çekilişine zaten katıldınız!"
+ IncorrectInviteCountMessage: "Bu çekilişe katılmak için en az {minInvites} davete sahip olmanız gerekiyor."
+
+ Embeds:
+  ActiveGiveaway:
+    Prize: "## {prize} Çekilişi x{winnerCount}!"
+    HostedByField: "Düzenleyen:"
+    EndsInField: "Bitiş:"
+    EntriesField: "Girişler:"
+    WhitelistRoleField: "Kimler katılabilir"
+    BlacklistRoleField: "Kimler katılamaz"
+    MinimumSeverJoinDateField: "Minimum sunucu katılma tarihi"
+    MinimumAccountAgeField: "Minimum hesap yaşı"
+  
+  EndedGiveaway:
+    Title: "## {prize} çekilişi sona erdi!"
+    WinnersField: "Kazananlar:"
+    EntriesField: "Girişler:"
+
+# ===========================================================================
+# AFK COMMAND MESSAGES
+# ===========================================================================
+AFK:
+ Success: "AFK durumu ayarlandı"
+ ErrorMessges:
+   NoPermission: "AFK komutunu kullanma izniniz yok."
+   NickNameMissingPermissions: "İzin eksikliği nedeniyle takma adı ayarlayamadık."
+   NickNameOwner: "AFK durumunuz ayarlandı, ancak sunucunun sahibi olduğunuz için takma adınızı değiştiremiyorum"
+   AlreadyMarkedAFK: "Zaten AFK olarak işaretlendiniz!"
+   TimeFormat: "Geçersiz zaman formatı. Lütfen şu formatı kullanın: 1s (saniye), 1m (dakika), 1h (saat), 1d (gün)"
+   TimeParseError: "Zaman girişini çözümlenemedi. Lütfen doğru formatta olduğundan emin olun."
+   RoleCreate: "AFK rolü oluşturulurken bir hata oluştu. Lütfen izinlerimi kontrol edin."
+
+
+# ===========================================================================
+# VERIFICATION MESSAGES
+# ===========================================================================
+Verify:
+  AlreadyVerified: "Zaten doğrulandı!"
+  Success: "Başarıyla doğrulandınız!"
+  NoRole: "Sunucuda yapılandırılan doğrulanmamış rolü mevcut değil. Lütfen sunucu yöneticisi ile iletişime geçin."
+  Error: "Hesabınızı doğrularken bir hata oluştu. Lütfen sunucu personeli ile iletişime geçin."
+
+# ===========================================================================
+# LEADERBOARD & LEVEL COMMAND MESSAGES
+# ===========================================================================
+Leaderboard:
+  Messages:
+    Top: "{guild} sunucusunda En Çok Mesaj Gönderen İlk 5 Kullanıcı"
+    Messages: "{count} Mesaj"
+    Footer: "Veri tarihi: {date}"
+  XP:
+    Top: "En Yüksek Seviyeler"
+
+Levels:
+  NoPermission: "Erişim reddedildi. XP veya seviyeleri değiştirmek için gerekli izinlere sahip değilsiniz."
+  DataNotFound: "{user} için kayıt bulunamadı. Lütfen kullanıcının sistemde mevcut olduğundan emin olun."
+  CurrentLevelAndXP: "{user} şu anda {level} seviyesinde ve toplamda {xp} XP'ye sahip."
+  UpdatedXP: "{user} için XP başarıyla {xp} olarak güncellendi."
+  UpdatedLevel: "{user} için seviye başarıyla {level} olarak güncellendi."
+  UpdatedXPAndLevel: "{user} için XP ve seviye sırasıyla {xp} ve {level} olarak güncellendi."
+
+# ===========================================================================
+# ADDROLE/REMOVEROLE COMMAND MESSAGES
+# ===========================================================================
+AddRole:
+  AddroleSelfRole: "Kendinize bir rol ekleyemezsiniz."
+  AddroleHighestRole: "Seçilen rol, en yüksek rolümden daha yüksek."
+  AddroleUserRoleNotAbove: "Kendi en yüksek rolünüzden daha yüksek veya eşit bir rol ekleyemezsiniz."
+  AddroleAlreadyHave: "Kullanıcı bu role zaten sahip."
+  AddroleSuccess: "{role} rolü {user} kullanıcısına başarıyla eklendi."
+  AddroleError: "Rol eklenirken bir hata oluştu."
+  RoleAllUserHighestRole: "Kendi en yüksek rolünüzden daha yüksek veya eşit bir rol atayamazsınız."
+
+RoleAll:
+  RoleAllConfirmationAdd: "{role} rolünü tüm kullanıcılara eklemek istediğinizden emin misiniz?"
+  RoleAllConfirmationRemove: "{role} rolünü tüm kullanıcılardan kaldırmak istediğinizden emin misiniz?"
+  RoleAllHighestRole: "Seçilen rol, botun en yüksek rolünden daha yüksek veya eşit. İşlem yapılamaz."
+  RoleAllUserHighestRole: "Seçilen rol, sizin en yüksek rolünüzden daha yüksek veya eşit. İşlem yapılamaz."
+  RoleAllSuccessAdd: "{role} rolü tüm kullanıcılara başarıyla eklendi."
+  RoleAllSuccessRemove: "{role} rolü tüm kullanıcılardan başarıyla kaldırıldı."
+  RoleAllError: "Rol eklenirken/kaldırılırken bir hata oluştu."
+  RoleAllCancelled: "İşlem iptal edildi."
+  RoleAllTimeOut: "Komut zaman aşımına uğradı. İşlem yapılmadı."
+
+Temprole:
+  SameOrHigherRoleError: "Kendi en yüksek rolünüzle aynı veya daha yüksek rolleri atayamazsınız."
+  InvalidDurationFormat: "Geçersiz süre formatı. Lütfen 1h, 15m, 1d gibi formatları kullanın."
+  RoleAssigned: "Geçici rol {role}, {user} kullanıcısına {duration} süreyle atandı."
+  ErrorAssigningRole: "Geçici rol atanırken bir hata oluştu."
+  MissingPermissionsError: "Bu rolü atamak için botun yeterli izinleri yok."
+  UnknownRoleError: "Belirtilen rol geçersiz veya bilinmiyor. Lütfen geçerli bir rol belirtin."
+
+# ===========================================================================
+# HISTORY/CLEARHISTORY COMMAND MESSAGES
+# ===========================================================================
+History:
+  HistoryEmbedTitle: "{user-tag} Kullanıcı Geçmişi"
+  HistoryEmbedUserInfo: "👤 Kullanıcı Bilgileri"
+  HistoryEmbedName: "İsim"
+  HistoryEmbedJoinedServer: "📆 Sunucuya Katılım Tarihi"
+  HistoryTotalMessages: "💌 Toplam Mesajlar"
+  HistoryEmbedNote: "📝 Not"
+  HistoryEmbedWarnings: "⚠️ Uyarılar"
+  HistoryEmbedTimeouts: "⏲️ Zaman Aşımı"
+  HistoryEmbedKicks: "👢 Atılma"
+  HistoryEmbedBans: "🔨 Yasaklanma"
+
+ClearhistorySuccess: "{user} kullanıcısının geçmişi başarıyla temizlendi!" # Kullanılabilir değişkenler: {user}
+
+# ===========================================================================
+# POLL COMMAND MESSAGES
+# ===========================================================================
+PollEmbedTitle: "Bir anket başlatıldı!"
+PollEmbedFooter: "Anketi Başlatan:"
+PollEmojis:
+  upvote: "👍"
+  downvote: "👎"
+
+
+# ===========================================================================
+# PURGE COMMAND MESSAGES
+# ===========================================================================
+Purge:
+  NoPermsMessage: "Mesajları silme izniniz yok."
+  PurgeCleared: "{amount} mesaj başarıyla silindi."
+  PurgeOld: "Hata: 14 günden daha eski mesajları silemiyorum."
+  ModerationEmbedTitle: "Moderasyon Eylemi"
+  ModerationEmbedAction: "Eylem: Sil"
+  ModerationEmbedDetails: "Personel: <@{user-id}>\nMiktar: {amount}\nKanal: {channel}"
+
+# ===========================================================================
+# SLOWMODE COMMAND MESSAGES
+# ===========================================================================
+SlowmodeReset: "Bu kanal için bekleme süresi sıfırlandı."
+SlowmodeFailed: "Bu kanalda yavaş modu ayarlamak başarısız oldu, lütfen yavaş mod süresini kontrol edin."
+SlowmodeSuccess: "Bu kanal için bekleme süresi **{time}** saniye olarak ayarlandı." # Kullanılabilir değişkenler: {time}
+
+# ===========================================================================
+# ANTIHOIST COMMAND MESSAGES
+# ===========================================================================
+AntiHoist:
+  NoPermission: "Antihoist komutunu kullanma izniniz yok."
+  CommandCompleted: "Antihoist komutu başarıyla yürütüldü."
+  NotifyUserMessage: "Merhaba {user}! Kullanıcı adınız `{oldDisplayName}`'dan `{newDisplayName}` olarak değiştirildi çünkü **{guildName}** sunucusunda isim hoist'ine izin verilmiyor."
+# ===========================================================================
+# WARN COMMAND MESSAGES
+# ===========================================================================
+
+Unwarn:
+  NoPermission: "Bu komutu kullanma izniniz yok."
+  NoWarnings: "Bu kullanıcı için uyarı bulunamadı."
+  InvalidWarningID: "Geçersiz uyarı kimliği."
+  WarningRemoved: "{userTag} kullanıcısından uyarı kaldırıldı: `{reason}`."
+  Error: "İsteğinizi işlerken bir hata oluştu."
+
+Warn:
+  BotOrSelf: "Bir botu veya kendinizi uyarmazsınız."
+  Success: "{userTag} kullanıcısı şu nedenle uyarıldı: {reason}"
+  Error: "Bu kullanıcıyı uyarmaya çalışırken bir hata oluştu."
+
+# ===========================================================================
+# TEMPVOICE COMMAND MESSAGES
+# ===========================================================================
+tempVoice:
+  userNotInVoiceChannel: "Şu anda bir ses kanalında değilsiniz."
+  channelNotTemporary: "Bu geçici bir ses kanalı değil."
+  noPermission: "Bu komutu kullanma izniniz yok."
+  errorOccurred: "Bir hata oluştu: {error}"
+  channelLocked: "Geçici ses kanalınız kilitlendi."
+  channelUnlocked: "Geçici ses kanalınız kilidi açıldı."
+  channelHidden: "Geçici ses kanalınız gizlendi."
+  channelVisible: "Geçici ses kanalınız artık görünür."
+  userLimitSet: "Kullanıcı limiti {limit} olarak ayarlandı."
+  noUserLimit: "Kullanıcı limiti kaldırıldı."
+  channelRenamed: "Ses kanalı {newname} olarak yeniden adlandırıldı."
+  userPermitted: "{user} artık kanala katılabilir."
+  userUnpermitted: "{user} artık kanala katılamaz."
+  userNotInChannel: "{user} ses kanalınızda değil."
+  userKicked: "{user} kanaldan atıldı."
+  userBanned: "{user} geçici ses kanallarınızdan yasaklandı."
+  userAlreadyBanned: "{user} zaten yasaklı."
+  userUnbanned: "{user} geçici ses kanallarınızdan yasak kaldırıldı."
+  userNotBanned: "{user} şu anda yasaklı değil."
+  triggerChannelDeleted: "{id} kimlikli tetikleme kanalı silindi."
+  noTriggerChannels: "Konfigüre edilmiş tetikleme kanalı yok."
+
+
+Reminder:
+  Messages:
+    invalid_mentions: "Mesajınızda izin verilmeyen mention'lar var. Lütfen `@everyone`, `@here` veya rol mention'larını kaldırın."
+    invalid_format: "Lütfen geçerli bir format kullanın, örneğin '10m', '1h', '2d'."
+    permission_denied: "Başka kullanıcılar için hatırlatıcı ayarlama izniniz yok."
+  Embeds:
+    Reminder:
+      Title: "Hatırlatıcı Başarıyla Ayarlandı"
+      Description:
+        - "**{user}** için **{time}** süresince hatırlatıcı ayarlandı."
+      Footer:
+        Text: "CoderTim Development | Hatırlatıcı Sistemi"
+        Icon: "https://i.imgur.com/w5XxKpc.png"
+      Author:
+        Text: ""
+        Icon: ""
+      Color: "#00FF00"
+      Image: ""
+      Thumbnail: ""
+    DM:
+      Title: "🔔 Hatırlatıcı!"
+      Description: "{message}"
+      Footer:
+        Text: "Hatırlatıcı zamanı"
+        Icon: "https://i.imgur.com/yygn7ni.png"
+      Author:
+        Text: ""
+        Icon: ""
+      Color: "#0099FF"
+      Image: ""
+      Thumbnail: ""
+
+
+# ===========================================================================
+# MUSIC COMMAND MESSAGES
+# ===========================================================================
+Music:
+  NoPermission: "Müzik komutunu kullanma izniniz yok."
+  Error: "Bir şeyler yanlış gitti."
+  NotInVoiceChannel: "Müzik komutunu kullanmak için bir ses kanalında olmanız gerekiyor."
+  NotInSameVoiceChannel: "Müzik komutunu kullanmak için aynı ses kanalında olmanız gerekiyor."
+  AddedToQueue: "Parça kuyruğa eklendi."
+  QueryNotFound: "Sorgunuz için sonuç bulunamadı."
+  NoMusicInQueue: "Kuyrukta müzik yok."
+  QueueCleared: "Kuyruk temizlendi!"
+  NoPreviousMusic: "Geri dönülecek müzik yok."
+  NoMusicPlaying: "Şu anda çalan müzik yok."
+  Stopped: "Tüm müzikler başarıyla durduruldu."
+  AddingTrack: "Parça kuyruğa ekleniyor"
+  Skipped: "**{title}** atlandı."
+  NothingToSkip: "Atlanacak bir şey yok."
+  Paused: "**{title}** duraklatıldı."
+  AlreadyPaused: "**{title}** zaten duraklatılmış durumda."
+  Resumed: "**{title}** devam ettirildi."
+  AlreadyResumed: "**{title}** zaten devam ettirilmiş durumda."
+  Seeked:
+   Success: "Parçada **{time}** konumuna gidildi."
+   Error: "Parçada **{time}** konumuna gitme başarısız oldu."
+  WentBackATrack: "Bir önceki parçaya geri dönüldü."
+  Looping:
+   Off: "Döngü modu şu anda **{state}**."
+   Track: "Döngü modu: **{state}**."
+   Queue: "Döngü modu: **{state}**."
+   Autoplay: "Döngü modu: **{state}**."
+  Move:
+   InvalidPosition: "Geçersiz parça pozisyonu veya hareket pozisyonu."
+   Success: "**{track}** parçası kuyruğun **{newPosition}** pozisyonuna taşındı."
+   Error: "**{track}** parçasını taşırken bir hata oluştu."
+  Filters:
+   EmbedError: "Filtreler gömüsü gösterilirken bir hata oluştu."
+   Fields:
+    Enabled: "Etkin"
+    Disabled: "Devre dışı"
+  NowPlaying:
+    GeneratingError: "Şu anda çalan parça görseli oluşturulurken bir hata oluştu."
+# ===========================================================================
+# TICKET MESSAGES
+# ===========================================================================
+Tickets:
+  WorkingHours: "Bu destek talebi çalışma saatleri dışında oluşturulmuş. Lütfen çalışma saatlerimizin tekrar başlamasını bekleyin.\nÇalışma saatlerimiz {workinghours_start} ile {workinghours_end} arasındadır."
+  Deleting: "Bu destek talebi şimdi siliniyor."
+  Deletion: "Destek talebi şimdi silinecek."
+  DeleteCountDown: "Bu destek talebi {time} saniye içinde silinecek."
+  Archive: "Bu destek talebi şimdi arşivleniyor."
+  Closed: "Bu destek talebi şimdi kapatıldı."
+  TicketTypePlaceholder: "Bir destek talebi türü seçin"
+  AlreadyOpen: "Zaten açık bir destek talebiniz var! Başka bir destek talebi açmadan önce bunu kapatın."
+  CloseTicketButton: "Destek talebini Kapat"
+  ReviewAlreadySubmitted: "Bu destek talebi için zaten bir inceleme göndermişsiniz."
+  ReviewTitle: "İnceleme Geri Bildirimi"
+  ReviewPlaceholder: "Bu puanı neden verdiğinizi bize söyleyin:"
+  ReviewComplete: "Geri bildiriminiz için teşekkürler!"
+  TicketReopenTitle: "Destek talebi Yeniden Açıldı"
+  TicketReopenDescription: "Destek talebi <@{userId}> tarafından yeniden açıldı."
+  TicketReopen: "Destek talebi yeniden açıldı!"
+  TranscriptTitle: "Transkript Oluşturuldu"
+  TranscriptDescription: "Destek talebi ID {ticketId} için transkript <@{userId}> tarafından oluşturuldu."
+  TranscriptReady: "İşte destek talebinizin transkripti:"
+  TranscriptNotEnough: "Bir transkript oluşturmak için yeterli mesaj yok."
+
+  TicketCreated:
+    LinkText: "Destek talebine Git"
+    Embed:
+      Title: "Destek talebi Oluşturuldu"
+      Description:
+        - "Destek talebiniz oluşturuldu. {link}"
+      Footer:
+        Text: ""
+        Icon: ""
+      Author:
+        Text: ""
+        Icon: ""
+      Color: "#00FF00"
+      Image: ""
+      Thumbnail: ""
+    Button: 
+      Text: "Destek talebine Git"
+      Emoji: "🟢"
+
+  Blacklisted:
+    Embed:
+      Title: "🚫 Destek talebi Açmanız Yasaklandı"
+      Description:
+        - "Destek talebi açmanız yasaklandı."
+        - "Yasağı itiraz etmek istiyorsanız bir yöneticiyle iletişime geçin."
+        - " "
+        - "> **Yasaklayan:** {user}"
+        - "> **Sebep:** {reason}"
+        - "> **Yasaklandığı Zaman:** {time}"
+      Footer:
+        Text: "Bu durumun hata olduğunu düşünüyorsanız bir yöneticiyle iletişime geçin."
+        Icon: "https://e7.pngegg.com/pngimages/1003/312/png-clipart-hammer-game-pension-review-internet-crouton-hammer-technic-discord-thumbnail.png"
+      Author:
+        Text: ""
+        Icon: ""
+      Color: "#FF0000"
+      Image: ""
+      Thumbnail: ""
+
+# ===========================================================================
+# MODERATION LOGS
+# ===========================================================================
+ModerationEmbedTitle: "Moderasyon Eylemi"
+ModerationEmbedAction: "Eylem:"
+ModerationEmbedDetails: "Detaylar:"
+
+Lockdown:
+  Start: "Sunucu şimdi karantina modunda."
+  End: "Karantina modu kaldırıldı."
+  Error: "Karantina modunu değiştirirken bir hata oluştu."
+
+ClearChannel:
+  ClearChannelPrompt: "Bu kanalı temizlemek istediğinizden emin misiniz?"
+  ClearChannelCleared: "Bu kanal {user} tarafından temizlendi."
+  ClearChannelGif: "https://media1.tenor.com/images/e275783c9a40b4551481a75a542cdc79/tenor.gif?itemid=3429833"
+  CancelClear: "Kanal temizleme iptal edildi."
+  ClearTimeout: "Kanal temizleme zaman aşımına uğradı."
+
+Nickname:
+  Description: "Bir kullanıcının takma adını değiştirin."
+  UserOptionDescription: "Takma adını değiştirmek istediğiniz kullanıcı."
+  NicknameOptionDescription: "Kullanıcı için yeni takma ad."
+  NoPermsMessage: "Takma adları değiştirme izniniz yok."
+  UserNotFound: "Belirtilen kullanıcı sunucuda bulunamadı."
+  NicknameChangeSuccess: "{user}'ın takma adı başarıyla {nickname} olarak değiştirildi."
+  NicknameChangeFailure: "Kullanıcının takma adını değiştirme başarısız oldu. Lütfen daha sonra tekrar deneyin."
+
+Ban:
+  UserNotFound: "Belirtilen kullanıcı bulunamadı."
+  UserFailedDM: "Kullanıcı yasaklandı ancak DM gönderilemiyor çünkü DM'leri kapalı."
+  CantBanSelf: "Kendinizi yasaklayamazsınız."
+  CantBanUser: "Bu kullanıcıyı yasaklayamıyorum. Belki benden daha yüksek bir role sahipler veya benimle aynı role sahipler."
+  Success: "{userTag} başarıyla {reason} nedeniyle yasaklandı."
+  Error: "Bu kullanıcıyı yasaklamaya çalışırken bir hata oluştu."
+
+TempBan:
+  NoPermsMessage: "Bu komutu kullanma yetkiniz yok."
+  UserNotFound: "Belirtilen kullanıcı bulunamadı. Lütfen girdiyi kontrol edin."
+  InvalidDuration: "Geçersiz süre formatı. Lütfen '1d 2h 15m' gibi geçerli bir format kullanın."
+  CantBanUser: "Bu kullanıcı yasaklanamaz. Belki daha yüksek bir role veya özel izinlere sahipler."
+  Success: "{userTag} başarıyla {duration} süreyle geçici olarak yasaklandı. Sebep: {reason}."
+  Error: "Kullanıcıyı geçici olarak yasaklamaya çalışırken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+
+Unban:
+  UnbanUserNotBanned: "Bu kullanıcı şu anda yasaklı değil."
+  UnbanMsg: "{user} başarıyla yasak kaldırıldı."
+  UnbanError: "Yasağı kaldırmaya çalışırken bir hata oluştu."
+
+Kick:
+  UserNotFoundInGuild: "Kullanıcı bu sunucuda bulunamadı."
+  CannotKickSelf: "Kendinizi atamazsınız."
+  CannotKickUser: "Bu kullanıcıyı atamazsınız."
+  DMFailed: "DM gönderilemedi."
+  KickSuccess: "{userTag} başarıyla atıldı. Sebep: {reason}"
+  KickError: "Bu kullanıcıyı atmaya çalışırken bir hata oluştu."
+
+ClearTimeout:
+  UserNotFound: "Kullanıcı bu sunucuda bulunamadı."
+  NoTimeout: "{userTag} şu anda zaman aşımında değil."
+  TimeoutCleared: "{userTag} zaman aşımı başarıyla kaldırıldı."
+  Error: "Zaman aşımını kaldırma başarısız oldu."
+
+Removerole:
+  Self: "Kendinizden rol kaldıramazsınız."
+  NoRole: "{user} kullanıcısının {role} rolü yok."
+  AddroleHighestRole: "En yüksek rolünüzden daha yüksek veya eşit bir rolü değiştiremezsiniz."
+  Error: "Rolü kaldırırken bir hata oluştu."
+  UserMsg: "{guild-name} içinde **{role}** rolünden çıkarıldınız."
+  EmbedTitle: "Rol Kaldırıldı"
+  EmbedRemovedBy: "Kaldıran:"
+  EmbedRemovedFrom: "Kaldırılan:"
+  EmbedIconURL: "https://i.imgur.com/MdiCK2c.png" 
+  RemoveroleNoRole: "{user} kullanıcısının {role} rolü yok."
+  HigherRoleError: "En yüksek rolünüzden daha yüksek veya eşit bir rolü kaldıramazsınız."
+
+SetNote:
+  NoteLongerThan250: "Notlar 250 karakterden uzun olamaz!"
+  NoteCantAddBot: "Bir bota not ekleyemezsiniz!"
+  NoteSuccess: "**{user}** kullanıcısına not başarıyla eklendi."
+  NoteError: "Notu ayarlarken bir hata oluştu."
+
+AddroleSuccess: "{user} kullanıcısına {role} rolü eklendi."
+AddroleError: "Rol eklenirken bir hata oluştu."
+# ===========================================================================
+# 8BALL COMMAND MESSAGES
+# ===========================================================================
+EightBallQuestion: "Soru"
+EightBallAnswer: "Cevap"
+
+EightBallReplies: ["Asla", "Kesinlikle", "Kesinlikle, ayrıca biraz hisse senedi almanız da gerekir", "Hiç şüphesiz", "Evet, kesinlikle", "Kesinlikle", "Emin değilim", "Sen söyle", "Belli değil, tekrar sor", "Mümkün, ama olası değil", "Evet", "Cevabım evet", "Kesinlikle", "Olabilir", "Negatif", "Muhtemelen", "Gördüğüm kadarıyla evet", "Hayır", "Cevabım hayır", "İyi şeyler olduğunu görüyorum", "Kesinlikle hayır", "Şimdi söylemesem daha iyi", "İşaretler eveti gösteriyor", "Kesinlikle öyle"]
+
+# ===========================================================================
+# BIRTHDAY SYSTEM
+# ===========================================================================
+BirthdayEmbedTitle: ":partying_face: Doğum gününüz başarıyla ayarlandı!"
+BirthdayEmbedDescription: "Doğum gününüzü ``{date}`` olarak ayarladım!" # Kullanılabilir değişkenler: {date}
+
+BirthdayOnce: "Doğum gününüzü sadece bir kez ayarlayabilirsiniz!"
+BirthdayDate: "Doğum gününüzün tarihini girmelisiniz!\nÖrnek: 4 Mayıs 2004"
+BirthdayGreater: "``{year}`` yılından daha büyük bir yıl giremezsiniz!" # Kullanılabilir değişkenler: {year}
+
+# ===========================================================================
+# SUGGESTION SYSTEM MESSAGES
+# ===========================================================================
+
+Suggestion:
+  SuggestionCreated: "Öneri başarıyla oluşturuldu."
+  Error: "Bir hata oluştu. Lütfen destekle iletişime geçin."
+  SuggestionNotFound: "Öneri bulunamadı."
+  AlreadyVoted: "Bu öneriye zaten oy verdiniz."
+  Upvoted: "Bu öneriyi oyladınız!"
+  Downvoted: "Bu öneriyi aşağı oyladınız!"
+  AlreadyProcessed: "Bu öneri zaten işlenmiş."
+  SuggestionAccepted: "Bu öneriyi kabul ettiniz."
+  SuggestionDenied: "Bu öneriyi reddettiniz."
+  ModalTitle: "Önerinizi gönderin!"
+  ModalQuestion: "Öneriniz nedir?"
+  SuggestionsDisabled: "Öneriler şu anda devre dışı."
+  BlacklistMessage: "Öneri oluşturmanız yasaklandı."
+
+
+
+
+
+# ===========================================================================
+# PROFILE COMMAND
+# ===========================================================================
+Profile:
+  Embed:
+    Title: ""
+    Description:
+      - "**Üye Detayları:**"
+      - "> **Katılma Tarihi:** {joinDate}"
+      - "> **En Yüksek Rol:** {role}"
+      - "> **Takma Ad:** {nickname}"
+      - " "
+      - "**Kullanıcı Detayları:**"
+      - "> **Kullanıcı ID:** {userID}"
+      - "> **Kullanıcı Adı:** {user}"
+      - "> **Oluşturulma Tarihi:** {creationDate}"
+      - "> **Rozetler:** {badges}"
+    Footer:
+      Text: "Lavi Bot | Profil Sistemi"
+      Icon: "{userIcon}"
+    Author:
+      Text: "{nickname}"
+      Icon: "{userIcon}"
+    Color: "#1e8fff"
+    Image: ""
+    Thumbnail: "{userIcon}"
+
+
+# ===========================================================================
+# LOGS
+# ===========================================================================
+RoleAddLogs:
+  Embed:
+    Title: ":arrow_up_down: Rol Değişikliği Tespit Edildi"
+    Description:
+      - "**👤 Üye:** {user}"
+      - "**🆕 Eklenen Rol:** {addedRoleNames}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🛡️ Rol Güncelleme Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#1E90FF"
+    Image: ""
+    Thumbnail: ""
+
+RoleRemoveLogs:
+  Embed:
+    Title: ":arrow_down: Rol Kaldırma Tespit Edildi"
+    Description:
+      - "**👤 Üye:** {user}"
+      - "**❌ Kaldırılan Rol:** {removedRoleNames}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🛡️ Rol Güncelleme Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FF4500"
+    Image: ""
+    Thumbnail: ""
+
+ChannelCreatedLogs:
+  Embed:
+    Title: ":white_check_mark: Yeni Kanal Oluşturuldu"
+    Description:
+      - "**👤 Yetkili:** {executor}"
+      - "**📺 Kanal Adı:** {channelName}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#00FF00"
+    Image: ""
+    Thumbnail: ""
+
+ChannelDeletedLogs:
+  Embed:
+    Title: ":no_entry: Kanal Silindi"
+    Description:
+      - "**👤 Yetkili:** {executor}"
+      - "**📺 Kanal Adı:** {channelName}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FF0000"
+    Image: ""
+    Thumbnail: ""
+
+UserUpdateLogs:
+  Embed:
+    Title: "👥 Takma Ad Değiştirildi"
+    Description:
+      - "**👤 Kullanıcı:** {userTag}"
+      - "**🔵 Eski Takma Ad:** `{oldNickname}`"
+      - "**🟢 Yeni Takma Ad:** `{newNickname}`"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#00FF00"
+    Image: ""
+    Thumbnail: ""
+
+TimeoutLogs:
+  Embed:
+    Title: "🚫 Zaman Aşımı Eylemi | Kullanıcı: {userName}"
+    Description: 
+      - "**👤 Kullanıcı:** {user}"
+      - "**🛠️ Moderatör:** {moderator}"
+      - "**⏰ Süre:** {duration}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FFA500"
+    Image: ""
+    Thumbnail: ""
+
+UntimeLogs:
+  Embed:
+    Title: "✅ Zaman Aşımı Kaldırıldı | Kullanıcı: {userName}"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**🛠️ Moderatör:** {moderator}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#4CAF50"
+    Image: ""
+    Thumbnail: ""
+
+WarnLogs:
+  Embed:
+    Title: "🚫 Uyarı Eylemi | Kullanıcı: {userName}"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**🛠️ Moderatör:** {moderator}"
+      - "**📅 Sebep:** {reason}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Eylemi | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FFA500"
+    Image: ""
+    Thumbnail: ""
+
+WarnList:
+  Embed:
+    Title: "{userName} İçin Uyarılar"
+    Color: "#FFA500"
+    Footer: "Toplam Uyarılar: {totalWarnings}"
+    Thumbnail: true
+    EntryFormat:
+      - "**{index}.** Sebep: {reason}"
+      - "Tarih: {longtime} saat {shorttime}"
+      - "Moderatör: <@{moderatorId}>"
+  NoWarnings: "{userName} kullanıcısının uyarısı yok."
+  Error: "Uyarıları getirirken bir hata oluştu."
+
+GuildUpdateLogs:
+  Embed:
+    Title: ":pencil: Sunucu Adı Değiştirildi"
+    Description:
+      - "**🔵 Eski Ad:** `{oldGuildName}`"
+      - "**🟢 Yeni Ad:** `{newGuildName}`"
+      - "**👤 Güncelleyen:** {executor}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#00E676"
+    Image: ""
+    Thumbnail: true
+
+MessageDeleteLogs:
+  Embed:
+    Title: ":wastebasket: Mesaj Silindi"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**💬 Mesaj:** `{deletedmessage}`"
+      - "**📺 Kanal:** {channel}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#DD2C00"
+    Image: ""
+    Thumbnail: true
+  Attachments: "**Ekler**"
+
+MessageUpdateLogs:
+  Embed:
+    Title: ":pencil: Mesaj Düzenlendi"
+    Description:
+      - "**👤 Düzenleyen:** {user}"
+      - "**📺 Kanal:** {channel}"
+      - "🔵 **Orijinal Mesaj:** `{oldmessage}`"
+      - "🟢 **Güncellenmiş Mesaj:** `{newmessage}`"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FF9800"
+    Image: ""
+    Thumbnail: true
+
+VoiceChannelStreamStart:
+  Embed:
+    Title: ":play_pause: Yayın Başladı"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**📺 Kanal:** {channel}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#00C853"
+    Image: ""
+    Thumbnail: true
+
+VoiceChannelStreamStop:
+  Embed:
+    Title: ":stop_button: Yayın Sona Erdi"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**📺 Kanal:** {channel}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#D50000"
+    Image: ""
+    Thumbnail: true
+
+VoiceChannelJoin:
+  Embed:
+    Title: ":loud_sound: Ses Kanalına Katıldı"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**📺 Kanal:** {channel}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#2196F3"
+    Image: ""
+    Thumbnail: true
+
+VoiceChannelLeave:
+  Embed:
+    Title: ":mute: Ses Kanalından Ayrıldı"
+    Description:
+      - "**👤 Kullanıcı:** {user}"
+      - "**📺 Kanal:** {channel}"
+      - "**📅 Tarih:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderasyon Günlüğü | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FF6D00"
+    Image: ""
+    Thumbnail: true
+
+VoiceChannelSwitch:
+  Embed:
+    Title: ":left_right_arrow: Voice Channel Switch"
+    Description:
+      - "**👤 User:** {user}"
+      - "🔵 **Old Channel:** {oldChannel}"
+      - "🟢 **New Channel:** {newChannel}"
+      - "**📅 Date:** {longtime}, {shorttime}"
+    Footer:
+      Text: "🔒 Moderation Log | LaviBot"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#3D5AFE"
+    Image: ""
+    Thumbnail: true
+
+
+# ===========================================================================
+# GAMES
+# ===========================================================================
+Economy:
+  balance: "💰 Bakiyeniz **{balance}** madeni para ve bankada **{bank}** madeni para var."
+  otherBalance: "💰 {user}’ın bakiyesi **{balance}** madeni para ve bankada **{bank}** madeni para."
+  topBalances: "En İyi 5 Kullanıcı:\n{topUsers}\n\nSizin Pozisyonunuz: #{position}"
+  beg: "🙇‍♂️ Dilencilik yaptınız ve **{coins}** madeni para aldınız. Bir dahaki sefere şansınız bol olsun!"
+  begCooldown: "⏳ Yeniden dilencilik yapabilirsiniz <t:{nextBeg}:R>."
+  blackjackWin: "🎉 Blackjack'te **{coins}** madeni para kazandınız! Şans sizden yana!"
+  blackjackLose: "😢 Blackjack'te **{coins}** madeni para kaybettiniz. Bir dahaki sefere şansınız bol olsun!"
+  blackjackCooldown: "⏳ Blackjack oynamak için tekrar <t:{nextBlackjack}:R> beklemeniz gerekiyor."
+  blackjackNoMoney: "Bu bahsi koymak için yeterli bakiyeniz yok."
+  crimeWin: "🕵️‍♂️ Başarıyla bir suç işlediniz ve **{coins}** madeni para kazandınız. Polislerden dikkatli olun!"
+  crimeLose: "🚨 Yakalandınız ve **{coins}** madeni para kaybettiniz. Suç ödemez... bu sefer."
+  crimeCooldown: "⏳ Yeniden suç işlemek için <t:{nextCrime}:R> beklemeniz gerekiyor."
+  daily: "🌟 Günlük ödülünüz **{coins}** madeni parayı aldınız. Yarın görüşürüz!"
+  dailyCooldown: "⏳ Günlük ödülünüzü zaten aldınız. Tekrar gelin <t:{nextDaily}:R>."
+  deposit: "🏦 Bankaya **{coins}** madeni para yatırdınız. Güvende!"
+  depositNoMoney: "Bu miktarı yatırmak için yeterli bakiyeniz yok."
+  robSuccess: "💸 **{target}**'dan başarıyla **{coins}** madeni para soydunuz. Kutlama zamanı!"
+  robFail: "😬 Soygun girişiminiz başarısız oldu. Bir dahaki sefere şansınız bol olsun!"
+  robCooldown: "⏳ Yeniden soygun yapabilmek için <t:{nextRob}:R> beklemeniz gerekiyor."
+  robNoMoney: "Hedefin yeterli bakiyesi yok."
+  slotWin: "🎰 **{coins}** madeni para kazandınız! Sonuç: **{result}**. Jackpota!"
+  slotLose: "🎰 **{coins}** madeni para kaybettiniz. Sonuç: **{result}**. Bir dahaki sefere şansınız bol olsun!"
+  slotCooldown: "⏳ Slot oyununu tekrar oynayabilmek için <t:{nextSlot}:R> beklemeniz gerekiyor."
+  slotNoMoney: "Bu bahsi koymak için yeterli bakiyeniz yok."
+  transfer: "🪙 **{target}**'a **{coins}** madeni para transfer ettiniz. Cömertliğiniz takdire şayan!"
+  transferNoMoney: "Bu miktarı transfer etmek için yeterli bakiyeniz yok."
+  withdraw: "🏧 Bankadan **{coins}** madeni para çektiniz. Akıllıca harcayın!"
+  withdrawNoMoney: "Bu miktarı çekmek için bankada yeterli bakiyeniz yok."
+  work: "💼 Çok çalıştınız ve **{coins}** madeni para kazandınız. Harika iş devam edin!"
+  workCooldown: "⏳ Yeniden çalışmak için <t:{nextWork}:R> beklemeniz gerekiyor."
+  storeEnoughBalance: "Bu ürünü satın almak için yeterli bakiyeniz yok."
+
+Store:
+  Embed:
+    Title: "{shopName} Mağazası"
+    Description:
+      - "{itemCount}: **{item}** ({price} 🪙)"
+      - "{description}"
+    Footer:
+      Text: "Sayfa {pageCurrent} / {pageMax}"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#FFA500"
+    Image: ""
+    Thumbnail: ""
+  Categories:
+    - "Rütbeler"
+    - "Güçlendiriciler"
+    - "Eşyalar"
+
+Inventory:
+  Embed:
+    Title: "{category} Envanteri"
+    Description:
+      - "{itemNum}: **{item}** (x{amount})"
+    Footer:
+      Text: "Sayfa {pageCurrent} / {pageMax}"
+      Icon: ""
+    Author:
+      Text: ""
+      Icon: ""
+    Color: "#00FF00"
+    Image: ""
+    Thumbnail: ""
+
+# 31695XJI0
